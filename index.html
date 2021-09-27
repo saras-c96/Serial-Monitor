@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Logger</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css" />
+
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #333333
+        }
+    </style>
+    <h1 style="color:#f0f0f0"> Logger</h1>
+
+    <h4 style="color:#ffffff">
+    We are using Node.js <span id="node-version"></span>, Chromium <span id="chrome-version"></span>, Electron
+    <span id="electron-version"></span>, and Serialport <span id="serialport-version"></span>
+    </h4>
+
+    <container>
+        <input  type="text" id="input_port" placeholder="COM5">
+        <button  id="enterbtn">Enter</button>
+        <!-- <button  id="sendAT" onclick="sendAT()">sendAT</button> -->
+    </container>
+    <div id="error"></div>
+    <table style="color:#cfa350" class="table" id="ports"></table>
+
+
+</body>
+
+<script src="./renderer.js"></script>
+
+</html>

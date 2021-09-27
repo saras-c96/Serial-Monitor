@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Serial Monitor</title>
+    <!-- <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style> -->
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #333333
+        }
+    </style>
+    <div class="container">
+        <h4 id='heading' style="color:#f0f0f0"> Serial Monitor </h4>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col" style="border:1px solid #cecece;">
+                <header style="color:#e4e4e4"> <strong>Unfiltered</strong></style>
+                    <input type="checkbox" id="autoscroll_raw" name="autoscroll_raw" checked="true">
+                    <label for="autoscroll_raw" style="color:#f0f0f0"> autoscroll</label><br>
+                    <textarea rows=16 cols=55 style="background-color:#333333;color:#e4e4e4" id="incomingData_raw">
+                </textarea>
+            </div>
+            <div class="col" style="border:1px solid #cecece;">
+                <header style="color:#e4e4e4"><strong>Filtered</strong></style>
+                    <input type="text" id="filter_string" placeholder="Ex. boot,ride,sleep">
+                    <button id="filter_enter">Enter</button>
+                    <input type="checkbox" id="autoscroll" name="autoscroll" checked="true">
+                    <label for="autoscroll" style="color:#f0f0f0"> autoscroll</label><br>
+                    <textarea rows=16 cols=55 style="background-color:#333333;color:#e4e4e4" id="incomingData">
+                </textarea>
+            </div>
+        </div>
+    </div>
+    <!-- <div> -->
+    <!-- <textarea style="background-color:#333333;color:#e4e4e4" rows="16" cols="90" id="incomingData"></textarea> -->
+    <!-- </div> -->
+
+</body>
+
+<script src="./serial.js"></script>
+
+</html>
